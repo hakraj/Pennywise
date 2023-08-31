@@ -1,0 +1,339 @@
+p {
+  line-height: 1.5;
+}
+
+
+/* Containers */
+.container-fluid {
+  padding: 1% 0;
+  width: 80%;
+}
+
+/* Logo */
+.logo {
+  color: #0d6efd;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+/* Sections */
+.colored-section {
+  background-color: hsl(216, 98%, 52%, 0.1);
+  text-align: center;
+}
+
+/* Headings */
+.big-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+
+/* Buttons */
+.download-btn {
+  margin: 1rem 1rem 0 0;
+}
+
+
+/* Title Section */
+.main-img {
+  max-width: 100%;
+}
+
+.navbar {
+  margin-bottom: 5rem;
+}
+
+.stats {
+  width: 75%;
+}
+
+.title-text {
+  padding-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+
+/* Features Section */
+.services {
+  padding: 2rem 0;
+}
+
+.features-header {
+  margin-top: 0.5rem;
+}
+
+.features-text {
+  margin: auto;
+  width: 80%;
+}
+
+
+/* About */
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.info-text {
+  padding-right: 10%;
+}
+
+.info-img {
+  max-width: 100%;
+}
+
+
+/* Testimonial */
+.testimonial-text {
+  margin-top: 5rem;
+}
+
+.testimonials-img {
+  width: 5%;
+  border-radius: 100%;
+  margin: 1.5rem;
+}
+
+.press-img {
+  margin: 5rem 2rem;
+  width: 10%;
+}
+
+
+/* Footer */
+.quote-box {
+  position: relative;
+  padding: 2rem 0;
+}
+.quoter {
+  font-size: smaller;
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+}
+
+.socials {
+  position: relative;
+  margin: 2rem 0 0;
+  text-align: right;
+  color: #fff;
+
+}
+
+.socials div {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.copyright {
+  margin: 0;
+  font-size: smaller;
+}
+
+#Footer .logo {
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+
+
+/* ID Selectors */
+#Title,
+#About,
+#Features,
+#Download,
+#Press {
+  margin-bottom: 5rem;
+}
+
+#About {
+  padding: 5rem 0;
+}
+
+#Features {
+  padding: 5rem 0;
+}
+
+#Features-bg, #Media-bg {
+  padding: 10rem 0 5rem;
+}
+
+
+#Features-bg::before,
+#Features-bg::after,
+#Media-bg::before,
+#Media-bg::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10rem;
+}
+
+#Features-bg::before {
+  top: 0;
+  left: 0;
+  background: url(images/curved/bg-section-top-desktop-1.svg) left top no-repeat;
+  background-size: cover;
+}
+
+#Features-bg::after {
+  bottom: 0;
+  left: 0;
+  background: url(images/curved/bg-section-bottom-desktop-1.svg) left bottom no-repeat;
+  background-size: cover;
+}
+
+#Media-bg::before {
+  top: 0;
+  left: 0;
+  background: url(images/curved/bg-section-top-desktop-2.svg) left top no-repeat; 
+  background-size: cover;
+}
+
+#Media-bg::after {
+  bottom: 0;
+  left: 0;
+  background: url(images/curved/bg-section-bottom-desktop-2.svg) left bottom no-repeat;
+  background-size: cover;
+}
+
+#Download {
+  margin: 15rem auto 15rem;
+  text-align: center;
+}
+
+#Footer {
+  background-color: #2B3595;
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+#Footer-bg {
+  padding-top: 9.85rem;
+}
+
+#Footer-bg::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10rem;
+}
+
+#Footer-bg::before {
+  top: 0;
+  left: 0;
+  background: url(images/curved/bg-footer-top-desktop.svg) left top no-repeat;
+  background-size: cover;
+}
+
+
+@media only screen and (max-width: 766px) {
+  #About {
+    padding: 4rem 0;
+  }
+  
+  .info {
+    flex-direction: column;
+  }
+
+  .info-text {
+    padding: 2rem 7%;
+    text-align: center;
+    order: 2;
+  } 
+
+  .info-text .big-heading {
+    font-size: 2rem; 
+  }
+
+  .info-img-div {
+    order: 1;
+  }
+
+  .info-img {
+    max-width: 80%;
+    margin: 0 10%;
+}
+
+
+
+}
+
+
+
+@media only screen and (max-width: 640px) {
+  .container-fluid {
+    padding: 1% 0;
+    width: 85%;
+  }
+
+  /* Headings */
+  .big-heading {
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  .title-text {
+    padding-top: 1rem;
+  }
+
+  .download-btn {
+    font-size: 1rem;
+  }
+
+  .testimonial-text {
+    margin-top: 2.5rem;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+
+  .press-img {
+    margin: 2rem 2rem;
+    width: 25%;
+  } 
+  #Download {
+    margin: 7rem auto 12.5rem;
+  }
+  
+
+  
+#Footer .logo {
+  font-size: 1.5rem;
+}
+
+  
+
+  #Features-bg::before {
+    background: url(images/curved/bg-section-top-mobile-1.svg) left top no-repeat;
+    background-size: cover;
+  }
+
+  #Features-bg::after {
+    background: url(images/curved/bg-section-bottom-mobile-1.svg) left bottom no-repeat;
+    background-size: cover;
+  }
+
+  #Media-bg::before {
+    background: url(images/curved/bg-section-top-mobile-2.svg) left top no-repeat; 
+    background-size: cover;
+  }
+  
+  #Media-bg::after {
+    background: url(images/curved/bg-section-bottom-mobile-2.svg) left bottom no-repeat;
+    background-size: cover;
+  }
+  
+  #Footer-bg::before {
+    background: url(images/curved/bg-footer-top-mobile.svg) left top no-repeat;
+    background-size: cover;
+  }
+  
+
+}
