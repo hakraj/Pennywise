@@ -1,5 +1,6 @@
 p {
   line-height: 1.5;
+  color: rgb(71, 85, 105)
 }
 
 
@@ -105,7 +106,8 @@ p {
 /* Footer */
 .quote-box {
   position: relative;
-  padding: 2rem 0;
+  padding: 2rem 0 ;
+  padding-bottom: 2.5rem;
 }
 .quoter {
   font-size: smaller;
@@ -207,10 +209,12 @@ p {
 
 #Footer {
   background-color: #2B3595;
-  color: #fff;
   font-size: 0.875rem;
 }
 
+#Footer p,#Footer em {
+  color: #fff;
+}
 #Footer-bg {
   padding-top: 9.85rem;
 }
@@ -230,7 +234,7 @@ p {
 }
 
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 768px) {
   #About {
     padding: 4rem 0;
   }
@@ -256,7 +260,12 @@ p {
   .info-img {
     max-width: 80%;
     margin: 0 10%;
-}
+  }
+  .quote-box {
+    padding: 1rem;
+    padding-bottom: 2rem;
+  }
+
 
 
 
